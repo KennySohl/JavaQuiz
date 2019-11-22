@@ -12,7 +12,7 @@ public class RandomGame extends Game {
     public void startGame() {
         int scoreOne = 0;
 
-        System.out.println("-= Chapter 1 =-");
+        System.out.println("-= Random Quiz =-");
         int quizIndex = (int) (Math.random() * quizArray.size());
         Question quiz = quizArray.get(quizIndex);
         String[] questionAndAnswers = quiz.toString().split(",");

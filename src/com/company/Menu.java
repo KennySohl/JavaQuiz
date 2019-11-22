@@ -49,7 +49,7 @@ class QuizMenu {
 
         switch (option) {
             case "1":
-                RandomGame game = new RandomGame(quizArray, input);
+                Game game = new Game(quizArray, input);
                 game.startGame();
 
                 new QuizMenu();
@@ -61,6 +61,12 @@ class QuizMenu {
                 System.out.println("-= Chapter 3  =-");
                 break;
             case "4":
+                RandomGame randomGame = new RandomGame(quizArray, input);
+                randomGame.startGame();
+
+                new QuizMenu();
+                break;
+            case "5":
                 Menu();
                 break;
         }
